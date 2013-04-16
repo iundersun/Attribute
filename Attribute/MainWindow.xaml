@@ -1,0 +1,21 @@
+﻿<Window x:Class="Attribute.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Attribute" ResizeMode="NoResize" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="230" Width="520" MinWidth="520" MaxWidth="520" MinHeight="230" MaxHeight="230" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox FocusVisualStyle="{x:Null}" Height="26" HorizontalAlignment="Left" Margin="12,12,0,0" Width="440" Name="path" VerticalAlignment="Top" TextChanged="path_TextChanged" BorderBrush="#FF8E8F8F" Focusable="True" TabIndex="0" IsTabStop="False" BorderThickness="0.99" KeyDown="path_KeyDown" />
+        <Button Content="..." Height="26" HorizontalAlignment="Right" Margin="0,12,12,0" Name="open_file" VerticalAlignment="Top" Width="26" Click="Open_file_Click" TabIndex="0" IsTabStop="False" />
+        <Button Content="Apply" Height="32" HorizontalAlignment="Right" Margin="0,0,12,12" Name="apply" VerticalAlignment="Bottom" Width="128" Click="Apply_Click" IsEnabled="False" />
+        <!--<ListBox Height="32" HorizontalAlignment="Left" Margin="12,0,0,12" Name="listBox1" VerticalAlignment="Bottom" Width="335" BorderBrush="#FF8E8F8F" />-->
+
+        <CheckBox VerticalAlignment="Top" Content="ReadOnly" Height="16" Name="readOnly" Margin="26,110,398,0" />
+        <CheckBox VerticalAlignment="Top" Content="Hidden" Height="16" Name="hidden" Margin="26,126,406,0" />
+        <CheckBox VerticalAlignment="Top" Content="System" Height="16" Name="system" Margin="164,110,268,0" />
+        <CheckBox VerticalAlignment="Top" Content="Archive" Height="16" Name="archive" Margin="164,126,268,0" />
+        <CheckBox VerticalAlignment="Top" Content="NotContentIndexed" Height="16" Name="notContentIndexed" Margin="290,110,73,0" />
+        <CheckBox VerticalAlignment="Top" Content="Normal" Height="16" Name="normal" Margin="290,126,87,0" Checked="normal_Checked" />
+        <RadioButton Content="Default" Height="16" HorizontalAlignment="Left" Margin="12,44,0,0" Name="def" VerticalAlignment="Top" IsChecked="True" GroupName="0" Checked="default_Checked" TabIndex="0" IsTabStop="False" />
+        <RadioButton Content="Manual" Height="16" HorizontalAlignment="Left" Margin="12,88,0,0" Name="manual" VerticalAlignment="Top" GroupName="0" Checked="manual_Checked" TabIndex="0" IsTabStop="False" />
+        <RadioButton Content="Clear" Height="16" HorizontalAlignment="Left" Margin="12,66,0,0" Name="clear" VerticalAlignment="Top" GroupName="0" Checked="clear_Checked" TabIndex="0" IsTabStop="False" />
+    </Grid>
+</Window>
